@@ -1,0 +1,233 @@
+body {
+	background-color: #555;
+	color: #000;
+	font-family: georgia;
+	margin: 0px 8px;
+}
+
+h1 {
+	color: #ccc;
+	margin: 0.5em 0em;
+}
+
+a { 
+	color: #c0db5a; 
+}
+
+/* ---------- hp ---------- */
+
+#albums a {
+	display: block;
+	float: left;
+	margin: 0px 8px 8px 0px; 
+}
+
+#albums a img {
+	vertical-align: middle;
+	border: 2px solid #aaa;
+}
+
+/* ---------- listing ---------- */
+
+#thumbnails {
+	float: right;
+	position: relative;
+	width: 245px;
+	overflow: auto;
+}
+
+#thumbnails img {
+	margin: 2px 4px 8px 6px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+#thumbnails img.selected {
+	margin: 0px 2px 6px 4px;
+	border: 3px solid #fff;
+}
+
+#content, #bottom {
+	margin-right: 268px;
+}
+
+#bottom {
+	margin-top: 8px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+#nav {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+#nav td {
+	background-color: #222;
+	color: #bbb;
+	padding: 5px 9px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#nav td.selected {
+	background-color: #444;
+	color: #000;
+	cursor: default;
+}
+
+#nav td.first {
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#nav td.last {
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-right-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.bigimage {
+	text-align: center;
+}
+
+.bigimage img {
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+
+.bigimage .prev {
+	cursor: pointer;
+	cursor: url(/sz/prev.cur), pointer;
+}
+
+.bigimage .next {
+	cursor: pointer;
+	cursor: url(/sz/next.cur), pointer;
+}
+
+.exif {
+	text-align: center;
+}
+
+.exif table {
+	border-collapse: collapse;
+}
+
+.exif img {
+	float: right;
+	margin-left: 1em;
+	border: 1px solid #fff;
+}
+
+.exif td {
+	padding: 2px 4px;
+}
+
+.exif .name {
+	text-align: right;
+}
+
+.exif .value {
+	text-align: left;
+	border-left: 1px solid #FF8040;
+}
+
+.map {
+	text-align: center;
+}
+
+.map #map {
+	text-align: left;
+	margin: 0px auto;
+	border: 1px solid #fff;
+}
+
+/* ====================================================== */
+
+#chapter { 
+	float: right;
+	width: 260px;
+}
+
+#album { 
+	margin-right: 268px;
+}
+
+#album h2 {
+	font-size: 24px;
+	padding-top: 6px;
+}
+
+#chapter h2 {
+	font-size: 16px;
+	padding-top: 11px;
+}
+
+.pod {
+	margin-bottom: 8px;
+	height: 45px;
+	background-color: #222;
+	color: #bbb;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	z-index: 1;
+}
+
+
+.pod h2 {
+	z-index: 1;
+	margin: 0px;
+	padding-left: 16px;
+}
+
+.opened {
+	background-color: transparent;
+}
+
+.opened h2 {
+	visibility: hidden;
+}
+
+.pod p {
+	font-size: 16px;
+	width: 100%;
+	margin: 0px;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.pod a {
+/*	text-decoration: none; */
+/*	padding: 4px 16px; */
+/*	background-color: #111; */
+	color: #ccc;
+	font-weight: bold;
+}
+
+.pod a.first {
+}
+
+.pod a.last {
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.pod a.selected {
+	font-weight: normal;
+	cursor: default;
+}
+
+.pod a:hover {
+	background-color: #444;
+	color: #000;
+}
